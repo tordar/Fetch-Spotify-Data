@@ -31,6 +31,10 @@ function displayMatches() {
     suggestions.innerHTML = html;
 }
 
+// Set a limit to how many matches can be displayed
+// Only one match per search
+// Switch between songs and artists
+
 const searchInput = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
 
