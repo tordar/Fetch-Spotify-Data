@@ -3,7 +3,12 @@ const endpoint = 'https://gist.githubusercontent.com/tordar/35eb217638fa1496124d
 
 const artistName = [];
 
-fetch(endpoint).then(blob => blob.json()).then(data => artistName.push(...data))
+
+
+fetch(endpoint)
+.then(blob => blob.json())
+.then(data => artistName.push(...data))
+console.log(artistName)
 
 function findMatches(wordToMatch, artistName) {
     return artistName.filter(place => {
